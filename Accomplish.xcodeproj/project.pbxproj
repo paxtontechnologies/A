@@ -20,6 +20,8 @@
 		523C51CC1A79FF4C005898F8 /* Mohave.otf in Resources */ = {isa = PBXBuildFile; fileRef = 523C51CB1A79FF4C005898F8 /* Mohave.otf */; };
 		526516A01A7C2E19007C26F2 /* ReviewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5265169F1A7C2E19007C26F2 /* ReviewsViewController.m */; };
 		526516A31A7C2EFF007C26F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526516A11A7C2EFF007C26F2 /* Main.storyboard */; };
+		526516A61A7C3BC6007C26F2 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526516A51A7C3BC6007C26F2 /* SettingsViewController.m */; };
+		526516A91A7C3BDA007C26F2 /* PastTutorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526516A81A7C3BDA007C26F2 /* PastTutorsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		5265169E1A7C2E19007C26F2 /* ReviewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewsViewController.h; sourceTree = "<group>"; };
 		5265169F1A7C2E19007C26F2 /* ReviewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewsViewController.m; sourceTree = "<group>"; };
 		526516A21A7C2EFF007C26F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Accomplish/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		526516A41A7C3BC6007C26F2 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		526516A51A7C3BC6007C26F2 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		526516A71A7C3BDA007C26F2 /* PastTutorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastTutorsViewController.h; sourceTree = "<group>"; };
+		526516A81A7C3BDA007C26F2 /* PastTutorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastTutorsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,10 @@
 				523C51711A78A42C005898F8 /* ViewController.h */,
 				523C51721A78A42C005898F8 /* ViewController.m */,
 				526516A11A7C2EFF007C26F2 /* Main.storyboard */,
+				526516A41A7C3BC6007C26F2 /* SettingsViewController.h */,
+				526516A51A7C3BC6007C26F2 /* SettingsViewController.m */,
+				526516A71A7C3BDA007C26F2 /* PastTutorsViewController.h */,
+				526516A81A7C3BDA007C26F2 /* PastTutorsViewController.m */,
 				523C51C51A79F261005898F8 /* selectTutorViewController.h */,
 				523C51C61A79F261005898F8 /* selectTutorViewController.m */,
 				5224AA9D1A7B2A52004D8666 /* TutorListViewController.h */,
@@ -245,9 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526516A91A7C3BDA007C26F2 /* PastTutorsViewController.m in Sources */,
 				523C51701A78A42C005898F8 /* Accomplish.xcdatamodeld in Sources */,
 				523C516D1A78A42C005898F8 /* AppDelegate.m in Sources */,
 				526516A01A7C2E19007C26F2 /* ReviewsViewController.m in Sources */,
+				526516A61A7C3BC6007C26F2 /* SettingsViewController.m in Sources */,
 				523C51731A78A42C005898F8 /* ViewController.m in Sources */,
 				5224AA9F1A7B2A52004D8666 /* TutorListViewController.m in Sources */,
 				523C516A1A78A42C005898F8 /* main.m in Sources */,
