@@ -12,13 +12,14 @@
 		523C516D1A78A42C005898F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 523C516C1A78A42C005898F8 /* AppDelegate.m */; };
 		523C51701A78A42C005898F8 /* Accomplish.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 523C516E1A78A42C005898F8 /* Accomplish.xcdatamodeld */; };
 		523C51731A78A42C005898F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523C51721A78A42C005898F8 /* ViewController.m */; };
-		523C51761A78A42C005898F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523C51741A78A42C005898F8 /* Main.storyboard */; };
 		523C51781A78A42C005898F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523C51771A78A42C005898F8 /* Images.xcassets */; };
 		523C517B1A78A42C005898F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523C51791A78A42C005898F8 /* LaunchScreen.xib */; };
 		523C51871A78A42C005898F8 /* AccomplishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 523C51861A78A42C005898F8 /* AccomplishTests.m */; };
 		523C51C71A79F261005898F8 /* selectTutorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523C51C61A79F261005898F8 /* selectTutorViewController.m */; };
 		523C51CA1A79FF1D005898F8 /* mohave-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 523C51C91A79FD74005898F8 /* mohave-webfont.ttf */; };
 		523C51CC1A79FF4C005898F8 /* Mohave.otf in Resources */ = {isa = PBXBuildFile; fileRef = 523C51CB1A79FF4C005898F8 /* Mohave.otf */; };
+		526516A01A7C2E19007C26F2 /* ReviewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5265169F1A7C2E19007C26F2 /* ReviewsViewController.m */; };
+		526516A31A7C2EFF007C26F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526516A11A7C2EFF007C26F2 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,6 @@
 		523C516F1A78A42C005898F8 /* Accomplish.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Accomplish.xcdatamodel; sourceTree = "<group>"; };
 		523C51711A78A42C005898F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		523C51721A78A42C005898F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		523C51751A78A42C005898F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		523C51771A78A42C005898F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		523C517A1A78A42C005898F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		523C51801A78A42C005898F8 /* AccomplishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccomplishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +52,9 @@
 		523C51C61A79F261005898F8 /* selectTutorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = selectTutorViewController.m; sourceTree = "<group>"; };
 		523C51C91A79FD74005898F8 /* mohave-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mohave-webfont.ttf"; sourceTree = "<group>"; };
 		523C51CB1A79FF4C005898F8 /* Mohave.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mohave.otf; sourceTree = "<group>"; };
+		5265169E1A7C2E19007C26F2 /* ReviewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewsViewController.h; sourceTree = "<group>"; };
+		5265169F1A7C2E19007C26F2 /* ReviewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewsViewController.m; sourceTree = "<group>"; };
+		526516A21A7C2EFF007C26F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Accomplish/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +102,13 @@
 				523C516C1A78A42C005898F8 /* AppDelegate.m */,
 				523C51711A78A42C005898F8 /* ViewController.h */,
 				523C51721A78A42C005898F8 /* ViewController.m */,
-				523C51741A78A42C005898F8 /* Main.storyboard */,
-				5224AA9D1A7B2A52004D8666 /* TutorListViewController.h */,
-				5224AA9E1A7B2A52004D8666 /* TutorListViewController.m */,
+				526516A11A7C2EFF007C26F2 /* Main.storyboard */,
 				523C51C51A79F261005898F8 /* selectTutorViewController.h */,
 				523C51C61A79F261005898F8 /* selectTutorViewController.m */,
+				5224AA9D1A7B2A52004D8666 /* TutorListViewController.h */,
+				5224AA9E1A7B2A52004D8666 /* TutorListViewController.m */,
+				5265169E1A7C2E19007C26F2 /* ReviewsViewController.h */,
+				5265169F1A7C2E19007C26F2 /* ReviewsViewController.m */,
 				523C51771A78A42C005898F8 /* Images.xcassets */,
 				523C51791A78A42C005898F8 /* LaunchScreen.xib */,
 				523C516E1A78A42C005898F8 /* Accomplish.xcdatamodeld */,
@@ -219,8 +224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				523C51CA1A79FF1D005898F8 /* mohave-webfont.ttf in Resources */,
+				526516A31A7C2EFF007C26F2 /* Main.storyboard in Resources */,
 				523C51CC1A79FF4C005898F8 /* Mohave.otf in Resources */,
-				523C51761A78A42C005898F8 /* Main.storyboard in Resources */,
 				523C517B1A78A42C005898F8 /* LaunchScreen.xib in Resources */,
 				523C51781A78A42C005898F8 /* Images.xcassets in Resources */,
 			);
@@ -242,6 +247,7 @@
 			files = (
 				523C51701A78A42C005898F8 /* Accomplish.xcdatamodeld in Sources */,
 				523C516D1A78A42C005898F8 /* AppDelegate.m in Sources */,
+				526516A01A7C2E19007C26F2 /* ReviewsViewController.m in Sources */,
 				523C51731A78A42C005898F8 /* ViewController.m in Sources */,
 				5224AA9F1A7B2A52004D8666 /* TutorListViewController.m in Sources */,
 				523C516A1A78A42C005898F8 /* main.m in Sources */,
@@ -268,20 +274,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		523C51741A78A42C005898F8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				523C51751A78A42C005898F8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		523C51791A78A42C005898F8 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				523C517A1A78A42C005898F8 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		526516A11A7C2EFF007C26F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				526516A21A7C2EFF007C26F2 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

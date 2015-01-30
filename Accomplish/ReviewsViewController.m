@@ -1,23 +1,24 @@
 //
-//  TutorListViewController.m
+//  ReviewsViewController.m
 //  Accomplish
 //
-//  Created by John Silvester on 1/29/15.
+//  Created by John Silvester on 1/30/15.
 //  Copyright (c) 2015 PaxtonTechnologies. All rights reserved.
 //
 
-#import "TutorListViewController.h"
-#import "selectTutorViewController.h"
+#import "ReviewsViewController.h"
 
-@interface TutorListViewController ()
+@interface ReviewsViewController ()
 
 @end
 
-@implementation TutorListViewController
+@implementation ReviewsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.listoftutors = [[NSArray alloc]initWithObjects:@"Tutor1",@"tutor2",@"Tutor3", nil];
+    
+    self.reviews = [[NSArray alloc]initWithObjects:@"Great",@"Helped!",@"Thank you!",@"Awesome",@"Sweet",@"So Happy!", nil];
+
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -31,7 +32,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -43,7 +43,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return self.listoftutors.count;
+    return self.reviews.count;
 }
 
 
@@ -51,34 +51,10 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text = [self.listoftutors objectAtIndex:indexPath.row];
+    cell.textLabel.text = [self.reviews objectAtIndex:indexPath.row];
     cell.textLabel.font = [UIFont fontWithName:@"Mohave" size:28];
-    cell.detailTextLabel.text = @"| Calculus | Trig |";
-    cell.detailTextLabel.font = [UIFont fontWithName:@"Mohave" size:11];
-   
-    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(cell.frame.size.width - 115, 10, 100, 20)];
-    
-    button.tag = indexPath.row;
-    [button addTarget: self action: @selector(seeReview) forControlEvents: UIControlEventTouchUpInside];
-    UIColor *orange = [UIColor colorWithRed:249/255.0f green:191/255.0f blue:59/255.0f alpha:1.0f];
-    [button setTitleColor:orange forState:UIControlStateNormal];
-    [button setTitle:@"★★★★★" forState:UIControlStateNormal];
-    button.layer.borderColor = [[UIColor grayColor] CGColor];
-    button.titleLabel.font = [UIFont fontWithName:@"Mohave" size:20];
-    button.center = CGPointMake(button.center.x, cell.frame.size.height/2);
-    [cell.contentView addSubview:button];
     
     return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-    NSMutableArray *title = [[NSMutableArray alloc]initWithArray:[[NSUserDefaults standardUserDefaults]arrayForKey:@"tutor"]];
-    [title replaceObjectAtIndex:2 withObject:[self.listoftutors objectAtIndex:indexPath.row]];
-    [[NSUserDefaults standardUserDefaults]setObject:title forKey:@"tutor"];
-    
-     [self.navigationController popViewControllerAnimated:YES];
 }
 
 
@@ -116,21 +92,14 @@
 }
 */
 
-
+/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-   
-    
 }
-
-#pragma  mark - button action
--(void)seeReview{
-    [self performSegueWithIdentifier:@"review" sender:self];
-}
-
+*/
 
 @end

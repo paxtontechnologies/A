@@ -81,7 +81,6 @@
     
     if (indexPath.row == 2) {
         [button setTitle:self.tutorName forState:UIControlStateNormal];
-
     }
     
     return cell;
