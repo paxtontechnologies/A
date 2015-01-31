@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _settings = [[NSArray alloc]initWithObjects:@"Address",@"Log out",@"payment info", nil];
+    _settings = [[NSArray alloc]initWithObjects:@"Address",@"Log Out",@"Payment Info",@"Facebook",@"Twitter",@"Website", nil];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -47,8 +47,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.textLabel.text = [self.settings objectAtIndex:indexPath.row];
+    cell.textLabel.font = [UIFont fontWithName:@"Mohave" size:30];
+    cell.textLabel.textAlignment = NSTextAlignmentCenter;
     // Configure the cell...
-    
+   
     return cell;
 }
 
@@ -96,5 +98,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+#pragma mark - height
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+
+    return 104;}
+
 
 @end
