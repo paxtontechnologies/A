@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.pasttutors = [[NSArray alloc]initWithObjects:@"image",@"image",@"image",@"image",@"image", nil];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -34,24 +34,47 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return self.pasttutors.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+   
+    self.tableView.separatorColor = [UIColor clearColor];
+    UIImageView *straigtline = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 5, cell.frame.size.height)];;
+    straigtline.center = CGPointMake(cell.frame.size.width/1.2, straigtline.center.y);
+    straigtline.backgroundColor = [UIColor grayColor];
     
+    [cell.contentView addSubview:straigtline];
+    
+    
+    UIImageView *image = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 80, 80)];
+    image.center = CGPointMake(cell.frame.size.width/1.2, cell.frame.size.height/2);
+    image.image = [UIImage imageNamed:[self.pasttutors objectAtIndex:indexPath.row]];
+    image.contentMode = UIViewContentModeScaleAspectFill;
+    image.layer.cornerRadius = 80/2;
+    image.layer.borderWidth = 5;
+    image.clipsToBounds = YES;
+    image.layer.borderColor = [[UIColor grayColor] CGColor];
+    [cell.contentView addSubview:image];
     // Configure the cell...
+    
+    
+    cell.textLabel.text = @"Tutor Name";
+    cell.detailTextLabel.text = @"| Calculus |";
+    cell.textLabel.font = [UIFont fontWithName:@"Mohave" size:28];
+    cell.detailTextLabel.font = [UIFont fontWithName:@"Mohave" size:13];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -96,5 +119,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    
+    return 150;}
+
 
 @end

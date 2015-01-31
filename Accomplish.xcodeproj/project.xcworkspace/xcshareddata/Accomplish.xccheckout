@@ -10,14 +10,14 @@
 	<string>Accomplish</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1C6DBF45F66D76FF3A1607B4E5A2013AEA409F57</key>
+		<key>D06A69CE7F1C1286DC8C52A8FB83E4470194AEDC</key>
 		<string>https://bitbucket.org/johnsilvester/accomplish.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Accomplish.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1C6DBF45F66D76FF3A1607B4E5A2013AEA409F57</key>
+		<key>D06A69CE7F1C1286DC8C52A8FB83E4470194AEDC</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1C6DBF45F66D76FF3A1607B4E5A2013AEA409F57</string>
+	<string>D06A69CE7F1C1286DC8C52A8FB83E4470194AEDC</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1C6DBF45F66D76FF3A1607B4E5A2013AEA409F57</string>
+			<string>D06A69CE7F1C1286DC8C52A8FB83E4470194AEDC</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Accomplish</string>
 		</dict>
