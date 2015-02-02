@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _settings = [[NSArray alloc]initWithObjects:@"Address",@"Log Out",@"Payment Info",@"Facebook",@"Twitter",@"Website", nil];
+    _settings = [[NSArray alloc]initWithObjects:@"Log Out",@"Payment Info",@"Facebook",@"Twitter",@"Website", nil];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

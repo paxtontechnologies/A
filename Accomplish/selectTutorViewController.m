@@ -16,11 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.information = [[NSArray alloc]initWithObjects:@"Time",@"Subject",@"Tutor",@"Address",@"Zip Code",@"Submit Request", nil];
+    self.information = [[NSArray alloc]initWithObjects:@"Time",@"Subject",@"Tutor",@"Address",@"Submit Request", nil];
     self.Subjects = [[NSArray alloc]initWithObjects:@"Algebra",@"Calc",nil];
     self.tutorName = @"";
 
-    self.buttonTitles = [[NSMutableArray alloc]initWithObjects:@"",@"",@"",@"",@"",@"", nil];
+    self.buttonTitles = [[NSMutableArray alloc]initWithObjects:@"",@"",@"",@"",@"", nil];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -71,7 +71,7 @@
     [cell.contentView addSubview:label];
  
     
-    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(200, 28, 100, 52)];
+    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(200, 28, 100, self.view.frame.size.width - 268)];
     [button setBackgroundColor:[UIColor grayColor]];
     button.tag = indexPath.row;
     [button addTarget: self action: @selector(buttonAction:) forControlEvents: UIControlEventTouchUpInside];
@@ -81,6 +81,14 @@
     
     if (indexPath.row == 2) {
         [button setTitle:self.tutorName forState:UIControlStateNormal];
+    }
+    
+    if (indexPath.row == 4) {
+        [label removeFromSuperview];
+        button.frame = CGRectMake(10, 28, self.view.frame.size.width - 40,cell.frame.size.height - 40 );
+        button.center = CGPointMake(cell.frame.size.width/2, cell.frame.size.height/2);
+        [button setTitle:@"Submit Request" forState:UIControlStateNormal];
+        button.titleLabel.font = [UIFont fontWithName:@"Mohave" size:28];
     }
     
     return cell;
@@ -146,6 +154,9 @@
     if (sender.tag == 3) {
         [self createaddressBox:sender];
     }
+    if (sender.tag == 4) {
+        NSLog(@"submit");
+    }
     
 }
 -(IBAction)selectedButton:(UIButton *)button{
@@ -165,7 +176,6 @@
 }
 -(IBAction)Address:(UIButton *)button{
     [self.buttonTitles replaceObjectAtIndex:button.tag withObject:@"✓"];
-    [self.buttonTitles replaceObjectAtIndex:button.tag+1 withObject:@"✓"];
     [self.tableView reloadData];
     [[NSUserDefaults standardUserDefaults]setObject:self.buttonTitles forKey:@"tutor"];
     [self.blackBackground removeFromSuperview];
@@ -311,6 +321,11 @@
     
     
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    
+    return 97;}
 
 
 @end

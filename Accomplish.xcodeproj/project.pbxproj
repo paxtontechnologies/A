@@ -18,6 +18,7 @@
 		523C51C71A79F261005898F8 /* selectTutorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523C51C61A79F261005898F8 /* selectTutorViewController.m */; };
 		523C51CA1A79FF1D005898F8 /* mohave-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 523C51C91A79FD74005898F8 /* mohave-webfont.ttf */; };
 		523C51CC1A79FF4C005898F8 /* Mohave.otf in Resources */ = {isa = PBXBuildFile; fileRef = 523C51CB1A79FF4C005898F8 /* Mohave.otf */; };
+		524FC85E1A7EBF6200FA1D73 /* tutorprofileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524FC85D1A7EBF6200FA1D73 /* tutorprofileViewController.m */; };
 		526516A01A7C2E19007C26F2 /* ReviewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5265169F1A7C2E19007C26F2 /* ReviewsViewController.m */; };
 		526516A31A7C2EFF007C26F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526516A11A7C2EFF007C26F2 /* Main.storyboard */; };
 		526516A61A7C3BC6007C26F2 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526516A51A7C3BC6007C26F2 /* SettingsViewController.m */; };
@@ -54,6 +55,8 @@
 		523C51C61A79F261005898F8 /* selectTutorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = selectTutorViewController.m; sourceTree = "<group>"; };
 		523C51C91A79FD74005898F8 /* mohave-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mohave-webfont.ttf"; sourceTree = "<group>"; };
 		523C51CB1A79FF4C005898F8 /* Mohave.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mohave.otf; sourceTree = "<group>"; };
+		524FC85C1A7EBF6200FA1D73 /* tutorprofileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tutorprofileViewController.h; sourceTree = "<group>"; };
+		524FC85D1A7EBF6200FA1D73 /* tutorprofileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tutorprofileViewController.m; sourceTree = "<group>"; };
 		5265169E1A7C2E19007C26F2 /* ReviewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewsViewController.h; sourceTree = "<group>"; };
 		5265169F1A7C2E19007C26F2 /* ReviewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewsViewController.m; sourceTree = "<group>"; };
 		526516A21A7C2EFF007C26F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Accomplish/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 				523C51711A78A42C005898F8 /* ViewController.h */,
 				523C51721A78A42C005898F8 /* ViewController.m */,
 				526516A11A7C2EFF007C26F2 /* Main.storyboard */,
+				524FC85C1A7EBF6200FA1D73 /* tutorprofileViewController.h */,
+				524FC85D1A7EBF6200FA1D73 /* tutorprofileViewController.m */,
 				526516A41A7C3BC6007C26F2 /* SettingsViewController.h */,
 				526516A51A7C3BC6007C26F2 /* SettingsViewController.m */,
 				526516A71A7C3BDA007C26F2 /* PastTutorsViewController.h */,
@@ -262,6 +267,7 @@
 				526516A61A7C3BC6007C26F2 /* SettingsViewController.m in Sources */,
 				523C51731A78A42C005898F8 /* ViewController.m in Sources */,
 				5224AA9F1A7B2A52004D8666 /* TutorListViewController.m in Sources */,
+				524FC85E1A7EBF6200FA1D73 /* tutorprofileViewController.m in Sources */,
 				523C516A1A78A42C005898F8 /* main.m in Sources */,
 				523C51C71A79F261005898F8 /* selectTutorViewController.m in Sources */,
 			);
